@@ -4,11 +4,112 @@ body
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
 }
 header
 {
     margin: 0;
-    padding: 0.5vh 0;
-    background: antiquewhite;
-    
+    padding: 5px 0;
+    background-color: antiquewhite;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 3;
+    left: 10%;
+    top: 0px;
+}
+.banner
+{
+    width: 100%;
+    height: auto;
+    background-color: lightgrey;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.banner>ul
+{
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.banner>ul>li
+{
+  display: inline-block;
+
+}
+.img
+{
+  height: 100px;
+  width: 300px;
+}
+.nameUser
+{
+  position: relative;
+  left: 55%;
+}
+.profile
+{
+  position: relative;
+  left: 55%;
+}
+main
+{
+  margin: 0;
+  padding-top: 150px;
+  width: 80%;
+  box-sizing: border-box;
+  left: 10%;
+  position: relative;
+  text-align: center;
+}
+article
+{
+	width: 80%;
+    box-sizing: border-box;
+    left: 10%;
+    position: relative;
+    text-align: center;
+}
+button
+{
+	width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    border-collapse: collapse;
+    border-radius: 5px;
+
+}
+button:hover
+{
+	  border-bottom: 10px solid blue;
+    background-color: lightgray;
+    transition: all 0.2s; 
+}
+article>ul
+{
+	  list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+article>ul>li
+{
+	  list-style: none;
+    box-sizing: border-box;
+    width: 49.5%;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+}
+article>ul>li:last-child
+{
+  left: -0.35%;
 }

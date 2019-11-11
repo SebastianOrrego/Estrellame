@@ -1,34 +1,29 @@
-window.onload = () =>
-{
-    const loginform= document.querySelector('#login-form');
-    loginform.addEventListener('submit', event =>
-    {
+window.onload = () => {
+    const loginForm = document.querySelector('#login-form');
+    loginForm.addEventListener('submit', event => {
         event.preventDefault();
-        const email = document.querySelector('#login-input-email');
+        const email = document.querySelector('#email-input');
+        const errorMessage = document.querySelector('#login-error');
 
-        if (email.value !== '')
-        {
-            const validacionEmail = validacion(email.value);
-            if (validacionEmail === true)
-            {
-                //Falta código de envío de información
-                window.location.href = "home.html"
+        if (email.value !== '') {
+            const emailValid = validateEmail(email.value);
+            if (emailValid) {
+                //errorMessage.innerHTML = 'El correo registrado no se encuentra registrado, intenta de nuevo';
+                //email.classList.add('has-error');
+                window.location.href = 'home.html'
+            } else {
+                errorMessage.innerHTML = 'No se ha ingresado un correo válido';
+                email.classList.add('has-error');
             }
-            else
-            {
-                errorMessage.innerHTML = "La estructura del correo es" +
-                "erronea. Por favor, revise el correo.";
-            }
+        } else {
+            errorMessage.innerHTML = 'No se ha ingresado ningún correo';
+            email.classList.add('has-error');
         }
-        else
-        {
-            errorMessage.innerHTML = "Rellene por favor el campo";
-            email.classList.add('error');
-        }
-    })
-}
-function validacion(email)
-{
-    var rev = /\S+@\S+\.\S+/;
-    return rev.test(email);
+    });
+
+    function validateEmail(email) {
+        const regularExpression = /\S+@\S+\.\S+/;
+
+        return regularExpression.test(email);
+    }
 }
