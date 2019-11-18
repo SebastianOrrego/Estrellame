@@ -6,27 +6,32 @@ body
     'Lucida Sans', Arial, sans-serif;
     width: 100%;
     box-sizing: border-box;
+    background-color: #dfdfdf;
+    height: 200vh;
 }
 header
 {
     margin: 0;
-    padding: 5px 0;
-    background-color: antiquewhite;
+    padding: 0 0 5px 0;
+    background-color: #fff;
     width: 80%;
-    height: auto;
-    box-sizing: border-box;
+    height: 120px;
+    box-sizing: content-box;
     position: fixed;
     z-index: 3;
     left: 10%;
     top: 0px;
+    border-radius: 0 0 7.5px 7.5px;
+    border-bottom: 1px solid lightgray;
 }
 .banner
 {
     width: 100%;
-    height: auto;
-    background-color: lightgrey;
+    height: inherit;
+    background-color: rgba(2,160,221,1);
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 0 0 7.5px 7.5px;
 }
 .banner>ul
 {
@@ -64,6 +69,13 @@ main
   position: relative;
   text-align: center;
 }
+.stars>ul
+{
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
 article
 {
 	width: 80%;
@@ -74,20 +86,22 @@ article
 }
 button
 {
-	width: 100%;
+	  width: 100%;
+    height: 40px;
     box-sizing: border-box;
     position: relative;
     display: inline-block;
     margin: 0;
     border-collapse: collapse;
-    border-radius: 5px;
-
+    border-radius: 0;
+    border: 1px solid grey;
+    font-size: 18px;
 }
 button:hover
 {
 	  border-bottom: 10px solid blue;
     background-color: lightgray;
-    transition: all 0.2s; 
+    transition: all 0.2s;
 }
 article>ul
 {
