@@ -69,22 +69,41 @@ main
   position: relative;
   text-align: center;
 }
+.stars
+{
+  width: 100%;
+}
 .stars>ul
 {
   list-style: none;
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
+  text-align: center;
 }
-article
+.stars>ul>li
 {
-	width: 80%;
+  display: inline-block;
+  margin: 0;
+  box-sizing: border-box;
+  width: 220px;
+  height: 50px;
+}
+.stars>ul>li>button
+{
+  width: 200px;
+  height: 45px;
+
+}
+section>article
+{
+	  width: 80%;
     box-sizing: border-box;
     left: 10%;
     position: relative;
     text-align: center;
 }
-button
+.send-receive
 {
 	  width: 100%;
     height: 40px;
@@ -96,12 +115,14 @@ button
     border-radius: 0;
     border: 1px solid grey;
     font-size: 18px;
+    background-color: white;
 }
-button:hover
+.send-receive:hover,.send-receive:link
 {
 	  border-bottom: 10px solid blue;
     background-color: lightgray;
     transition: all 0.2s;
+    transform: translateY(-5px);
 }
 article>ul
 {
@@ -126,4 +147,94 @@ article>ul>li
 article>ul>li:last-child
 {
   left: -0.35%;
+}
+.star
+{
+  width: 95%;
+  height: 20vh;
+  position: absolute;
+  left: 2.5%;
+  top: 50px;
+}
+.star-blue>button
+{
+  border: 2px solid blue;
+  border-radius: 10px;
+  background-color: white;
+  color: blue;
+}
+.star-blue>button:hover
+{
+  background-color: blue;
+  color: white;
+  transition: all 0.5s;
+}
+.star-violet>button
+{
+  border: 2px solid violet;
+  border-radius: 10px;
+  background-color: white;
+  color: violet;
+}
+.star-violet>button:hover
+{
+  background-color: violet;
+  color: white;
+  transition: all 0.5s;
+}
+.star-red>button
+{
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: white;
+  color: red;
+}
+.star-red>button:hover
+{
+  background-color: red;
+  color: white;
+  transition: all 0.5s;
+}
+.star-orange>button
+{
+  border: 2px solid orange;
+  border-radius: 10px;
+  background-color: white;
+  color: orange;
+}
+.star-orange>button:hover
+{
+  background-color: orange;
+  color: white;
+  transition: all 0.5s;
+}
+.star-yellow>button
+{
+  border: 2px solid #e3e300;
+  border-radius: 10px;
+  background-color: white;
+  color: #e3e300;
+}
+.star-yellow>button:hover
+{
+  background-color: #e3e300;
+  color: white;
+  transition: all 0.5s;
+}
+.star-green>button
+{
+  border: 2px solid green;
+  border-radius: 10px;
+  background-color: white;
+  color: green;
+}
+.star-green>button:hover
+{
+  background-color: green;
+  color: white;
+  transition: all 0.5s;
+}
+section
+{
+  margin: 10px;
 }
