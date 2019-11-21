@@ -156,6 +156,18 @@ article>ul>li:last-child
   left: 2.5%;
   top: 50px;
 }
+.first
+{
+  display: none;
+}
+.stars>ul>li>button:hover .first
+{
+  display: inline-block;
+}
+.stars>ul>li>button:hover .second
+{
+  display: none;
+}
 .star-blue>button
 {
   border: 2px solid blue;
@@ -237,4 +249,12 @@ article>ul>li:last-child
 section
 {
   margin: 10px;
+}
+.send-stars
+{
+  display: none;
+}
+.send-stars-hover
+{
+  display: block;
 }

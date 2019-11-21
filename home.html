@@ -28,36 +28,54 @@
                         <h1 class="title-stars">Enviar estrellas</h1>
                         <ul>
                             <li class="star-blue">
-                              <button type="button">
-                                <img src="https://img.icons8.com/metro/26/000000/star.png"
+                              <button type="button" onclick="send(1)">
+                                <img src="img/star.svg" class="first"
+                                alt="Estrella">
+                                <img src="img/star-blue.svg" class="second"
                                 alt="Estrella"> Excelencia</button>
                             </li>
                             <li class="star-violet">
-                              <button type="button">
-                                <img src="https://img.icons8.com/metro/26/000000/star.png"
+                              <button type="button" onclick="send(2)">
+                                <img src="img/star.svg" class="first"
+                                alt="Estrella">
+                                <img src="img/star-violet.svg" class="second"
                                 alt="Estrella"> Solidaridad</button>
                             </li>
                             <li class="star-red">
-                              <button type="button">
-                                <img src="https://img.icons8.com/metro/26/000000/star.png"
+                              <button type="button" onclick="send(3)">
+                                <img src="img/star.svg" class="first"
+                                alt="Estrella">
+                                <img src="img/star-red.svg" class="second"
                                 alt="Estrella"> Compañerismo</button>
                             </li>
                             <li class="star-orange">
-                              <button type="button">
-                                <img src="https://img.icons8.com/metro/26/000000/star.png"
+                              <button type="button" onclick="send(4)">
+                                <img src="img/star.svg" class="first"
+                                alt="Estrella">
+                                <img src="img/star-orange.svg" class="second"
                                 alt="Estrella"> Ética</button>
                             </li>
                             <li class="star-yellow">
-                              <button type="button">
-                                <img src="https://img.icons8.com/metro/26/000000/star.png"
+                              <button type="button" onclick="send(5)">
+                                <img src="img/star.svg" class="first"
+                                alt="Estrella">
+                                <img src="img/star-yellow.svg" class="second"
                                 alt="Estrella"> Alegría</button>
                             </li>
                             <li class="star-green">
-                              <button type="button">
-                                <img src="https://img.icons8.com/metro/26/000000/star.png"
+                              <button type="button" onclick="send(6)">
+                                <img src="img/star.svg" class="first"
+                                alt="Estrella">
+                                <img src="img/star-green.svg" class="second"
                                 alt="Estrella"> Trabajo en equipo</button>
                             </li>
                         </ul>
+                    </div>
+                    <div class="send-stars" id="send-stars">
+                      <img alt="Estrella" id="star">
+                      <input type="text" name="email-send" value="Para(For):">
+                      <input type="text" name="message-send" value="Mensaje(Message):">
+                      <button type="button" name="send">Enviar</button>
                     </div>
                 </article>
             </main>
@@ -78,6 +96,6 @@
                   </div>
                 </article>
             </section>
-        <style src="js/library-home.js"></style>
+        <script src="js/library-home.js"></script>
     </body>
 </html>
